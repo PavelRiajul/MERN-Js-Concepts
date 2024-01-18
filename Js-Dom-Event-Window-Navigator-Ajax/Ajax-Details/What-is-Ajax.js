@@ -38,3 +38,12 @@
 //(2)-> promises deye o pathate pari.
 
 //Api object er bitore string thakee, browser a stringify kore dekhbo->Json.stringify()
+
+
+//dummy jason.com --> theke ajax practices korbo.
+
+//Most Important*****
+//Akta Ajax er request  browser theke jete pare, abar Nodejs theke o jete pare.
+//# sanssative --> akta sms pathano,sansative sms/email/B2B ae doroner jotogola sansative calling goloase, seei calling golo konotai browser theke kora jabe na.Nodejs theke call korte hobe.
+
+//Api jokhon browser a run hoy tokhon user ta dekhte pai,tokhonare Sequrity er bisoe ta thakee na.ae jonno amader Api Nodejs a execution korte hobe.

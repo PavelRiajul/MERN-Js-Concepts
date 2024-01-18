@@ -10,9 +10,8 @@
 //rest parameter bade joni amra jodi alada kono parameter inout nete chai tahole ,sobsomoy rest parameter agee debo.
 //exmple:
  function restp(a,b,...c){
-    return a+b
  console.log(c)
- 
+ return a+b
  }
  var single= restp(10,40)
  console.log(single)
