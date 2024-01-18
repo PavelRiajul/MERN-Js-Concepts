@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout</title>
+</head>
+<body>
+    <button onclick="test()">Click</button>
+    <script>
+        //alert time set korar thik 10 second por window te amar alert option ta ashbe
+        /*setTimeout(function(){
+            alert("Alert after 5 mins")
+        },10000)*/
+
+        function test(){
+            setTimeout(()=>{
+                document.write("hello riajul")
+            },10000)
+        }
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom-from-input</title>
+</head>
+
+    <input id="num1"><br><br>
+    <input id="num2"><br><br>
+    <button onclick="AddTwoNumber()">Add</button>
+    <script>
+    // amra from er input theke value ber korbo.   seei value 2 ta jog(+) korbo. 
+    function AddTwoNumber(){
+// first a id er sahajje element find korbo
+let num1 =document.getElementById('num1').value
+ let num2 = document.getElementById('num2').value
+//value ta pabe amra string formata. karon Input type theke kono akta value jokhon pae by defult aeta dtring formata pae.
+let result = parseFloat(num1)+parseFloat(num2) //parsFloat kore string theke number a convert korlam
+alert(result)
+    }
+    </script>
+</body>
+</html>

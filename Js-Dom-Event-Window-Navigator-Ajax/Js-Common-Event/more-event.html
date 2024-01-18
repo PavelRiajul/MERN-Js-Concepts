@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more-event</title>
+</head>
+<body onload="MyEvent('load hoyese')">
+    <input onchange="MyEvent('change hoyese')" placeholder="onchange"> <br>
+    <input onkeydown="MyEvent('keydown hoyese')" placeholder="onkeydown"> <br>
+    <input onkeyup="MyEvent('keyup hoyese')" placeholder="onkeyup"> <br>
+
+    <script>
+        function MyEvent(msg){
+            console.log(msg)
+        }
+    </script>
+</body>
+</html>

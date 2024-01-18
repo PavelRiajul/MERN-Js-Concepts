@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-element-find</title>
+</head>
+<body>
+     <h1 id="MyId"></h1>
+     <!--class multiple jaigaiuse hoy-->
+     <h2 class="MyClass"></h2>
+     <h6 class="MyClass"></h6>
+     <button class="MyClass">l</button>
+
+     <!--name Attribute use korbo multiple jaigai-->
+     <h3 name="MyName">H3</h3>
+     <h5 name="MyName">H5</h5>
+     <button name="MyName">Button</button>
+
+     <!--tag use korbi-->
+     <p>p1</p>
+     <p>p2</p>
+     <p>p3</p>
+    <script>
+//HTML element find koibo.
+
+//getElementById use
+ var MyId = document.getElementById('MyId')
+ MyId.innerHTML = 'Eid Mobarok'  //innerHtml use kore h1 er botore text bosabo.
+
+ //..............................................................................
+ //getElementByCalssName use
+ //h2,h6,button ae ta tag er class same tai amra index number dore dore define korbo.
+var MyElements = document.getElementsByClassName('MyClass')
+MyElements[2].innerHTML='Riajul islam'
+
+//..........................................................................
+//getElementByName
+var MyName = document.getElementsByName('MyName')
+MyName[0].innerHTML='H1 manipulatae'
+//...........................................................................
+//getElementByTagName use korbo
+var MyTag = document.getElementsByTagName('p')
+MyTag[0].innerHTML='p1 manipulatet'
+    </script>
+</body>
+</html>

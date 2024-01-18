@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+<body>
+
+    
+    
+    <script>
+        let URL = "https://crud.teamrabbil.com/api/v1/ReadProduct"
+
+        //Fetch Using Async Await
+
+       // RequestUsingAsync()
+
+      /* async function RequestUsingAsync() {
+         let res =  await fetch(URL)
+         let jsondata = await res.json()
+
+         //server request send   (fetch url)
+         //server response receive
+         //response JSON
+         //response string
+         //string show
+
+         document.write(JSON.stringify(jsondata))
+        }*/
+
+        //request promiss
+        RequestPromises()
+        function RequestPromises(){
+            fetch(URL)
+            .then(res =>res.json)
+            .then(jsondata=>document.write(JSON.stringify(jsondata)))
+
+        }
+
+    </script>
+</body>
+</html>

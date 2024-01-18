@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window-obj</title>
+</head>
+<body>
+    <button onclick="objAlert()">Click</button>
+    <script>
+        
+// what window object?
+//Jokhon amra browser a kono tab open kori, ba jokhon kono window open kori,tokhon automaticaly window open hoye jai,ba create hoye jai.window object er bitore onek holo method ase je method golo use kore amra onek kaj korte pari. 
+//window object golo holo browser er building obj, browser ke control korar.
+//amra button er maddome woindow object er method golo test korbo.
+
+
+//....................................................................
+//alert() 
+//kono akta alert() display korar jonno amra alert() function use kori.
+//document sara just alert dele o hobe ,amra just alert ta akta variable a store korse.
+
+function objAlert(){
+   var al =  alert('Good Morning!')
+   document.write(al)
+}
+
+//.............................................................................
+//confirm() function
+//user er kas theke yes/no othoba true/false confirmation neyar jonno confirm use kore.akta result pabo.       
+    function objConfirm(){
+    let result =confirm("Do you want to delete")
+    document.write(result)
+        }
+//..............................................................................
+// prompt() obj
+// user er kas theke kono kiso Input neyar jonno amra propmt() use korbo.document.write korle akta result pabo.
+
+     function objPrompt(){
+       let Name= prompt('write your name')
+       document.write(Name)
+     }
+
+//..............................................................................................
+// open()
+// kono tab opne korte chaile amra open() method use korbo.     
+
+     function objOpen(){
+        open()
+       }
+
+//............................................................................................       
+//close()
+//kono tab close korte chaile amra close() use korbo.
+
+    function objClose(){
+        close()
+       }
+//......................................................................................
+ // setTimeout()
+ //specifice akta time pore kono kiso amra timeout korte chai, sekhetre amra setTimeout method use korbo.akta somoy pore kono kisor akta gotona gotano jai.
+ 
+ //setTimeout a 2ta parameter hobe.
+ //(1)->akta gotona hocche ami ki gotona gotate chacchi ,seei gotona
+ //(2)->arekta hocche koto second pore seei gotona ta gotbe,ba gotate chacchi.
+ //exmple
+ 
+ setTimeout(function(){
+    alert("Alert after 5 min")
+ },5000) // ae alert ta ae code ta execution er 10 second pore ashbe
+ //1000 mili second = 1 second
+       
+    
+    </script>
+</body>
+</html>

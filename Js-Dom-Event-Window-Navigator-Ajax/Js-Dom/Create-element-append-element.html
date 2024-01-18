@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create-element-Append-element</title>
+</head>
+<body>
+
+    <ul id="MyItems"></ul><br><br>
+    <input id="MyInput"><br><br>
+    <button onclick="AddItem()">Add</button>
+    <script>
+        //amra dekhobo Dom deye kivabe new element create korte pari,and kono akta element er modde childeElement ke append(+) korte pari.
+
+        function AddItem(){
+        var itemValue = document.getElementById('MyInput').value
+        //akhon itemvalue ta ul er bitore jokto korte hobe.ae jonno amra li element  ta ke create korbo
+        var listItem = document.createElement('li')
+        //akhon listItem er innerHTML a itemValue ta jokto(+) korte hobe
+        listItem.innerHTML=itemValue
+        //akhon amra ul er bitore listitem ke append korbo
+        var MyItems = document.getElementById('MyItems');
+        MyItems.appendChild(listItem)
+
+        }
+    </script>
+</body>
+</html>

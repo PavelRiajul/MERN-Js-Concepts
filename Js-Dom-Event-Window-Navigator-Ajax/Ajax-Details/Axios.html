@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       let URL = "https://crud.teamrabbil.com/api/v1/ReadProduct"
+        //Axios  async await request
+       /* AsyncUsingAxios()
+       async function AsyncUsingAxios(){
+          let res =   await axios.get(URL);
+          let jsonData = res.data;
+          document.write(JSON.stringify(jsonData))
+        }*/
+
+        //promises request Axios
+        /*AxiosRequestPromises()
+        function AxiosRequestPromises(){
+            axios.get(URL)
+            .then(res=>res.data)
+            .then(jsondata=>document.write(JSON.stringify(jsondata)))
+        }*/
+
+        //simple .then 
+        simpleAxiosget()
+        function simpleAxiosget(){
+        axios.get(URL).then((res)=>{
+        let jsondata = res.data;
+        document.write(JSON.stringify(jsondata))
+
+        })}
+
+    </script>
+</body>
+</html>
