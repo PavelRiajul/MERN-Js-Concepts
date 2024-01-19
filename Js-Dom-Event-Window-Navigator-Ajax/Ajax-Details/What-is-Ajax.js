@@ -32,10 +32,10 @@
 //Build in Fetch holo(letest version)
 
 //Ajax Packages
-//(1)-> Axios package(letest)(library)
+//(1)-> Axios package(letest)(library) Axios er library ta fetch theke onek beshi reach(er aro onek property ase)
 //(2)-> Jquery Axios(old)
 
-//Server a request pathate gele akta (URL) lagebe.Fetch and Axios deye URL pathabo.
+//Server a request pathate gele akta (URL) lagebe.Fetch and Axios deye URL pathabo.URL a request pathale amra data pabo ,ae data golo ke bolobo JSON
 
 //request pathanor jonno best way hocche:
 //(1)-> Async-Await kora

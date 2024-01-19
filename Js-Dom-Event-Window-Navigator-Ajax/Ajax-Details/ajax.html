@@ -3,41 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajax</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+ <title>Ajax</title>
 </head>
 <body>
 
     
     
     <script>
-        let URL = "https://crud.teamrabbil.com/api/v1/ReadProduct"
+        let URL = 'https://crud.teamrabbil.com/api/v1/ReadProduct'
+    
+        //Akhon amra fetch deye request pathabo......
+        //Fetch Using Async Await proceses 
 
-        //Fetch Using Async Await
 
-       // RequestUsingAsync()
+        // RequestUsingAsync()
+      //async  function RequestUsingAsync(){
+         //request er por amra akta respons peyesi 
+        // let res= await  fetch(URL)    //fetch(URl) lekhlee server a request a chole gese.server theke respons  gese res name er variable a.(recive)
+         //console.log(res)
+         //sei respons ta holo JSON data -akhon json data ta ke browser a show korate chai
+        // let jsonData = await res.json()
 
-      /* async function RequestUsingAsync() {
-         let res =  await fetch(URL)
-         let jsondata = await res.json()
+        // res are jsondata ae 2 line er bitore koikta gotona gotse
+        //(1) Server Request send  //akta request gese
+        //(2)Server Respons Recive //akta respons recive korsi
+        //(3)Respons Json  //sei respons ta ke ami json a convert korsi
+        //(4)Respons String //json a convert kore ,seei respons ta ke abar string a convert korsi.
+        //(5)String browser show // string a convert kore document.write korsi/browser a show korsi.
 
-         //server request send   (fetch url)
-         //server response receive
-         //response JSON
-         //response string
-         //string show
+        // document.write(JSON.stringify(jsonData)) //outpot ashbe object-object , ae object er bitore ki ase seta amra dekhte parbo jokhon amra JSON.Stringgify() korbo //browser je golo dekhai sob holo string.request respons er maddome jeei data adan-prodan hoy string akare. seei string tai convert hoye image hoye jabe,text hoyejabe,Audio hoye jabe etc.
+       // }
 
-         document.write(JSON.stringify(jsondata))
-        }*/
+            //   RequestUsingAsync()
+    //  async   function RequestUsingAsync(){
+            // let res = await fetch(URL)
+            // let jsonData = await res.json()
+            //console.log(jsonData) //jodi browser er console a dekhte chai.
+            // document.write(JSON.stringify(jsonData))  //jodi browser a dekhte cjai
+        // }
+       
 
-        //request promiss
-        RequestPromises()
-        function RequestPromises(){
-            fetch(URL)
-            .then(res =>res.json)
-            .then(jsondata=>document.write(JSON.stringify(jsondata)))
+        //...................................................................................
+        //same request ta using fetch  promises  style/stratejy a pathabo
+        //aekhane chinning kore kore pathate hobe.
 
+        // RequestPromises()
+        // function RequestPromises(){
+        //   
+            // fetch(URL)
+            // .then(res=>res.json())
+            // .then(jsondata=>document.write(JSON.stringify(jsondata)))
+        // }
+
+// fetch(URL)-> server a request gelo
+//.than(res=>res.json) tarpor amra akta respons paelam. seei respons takee json a convert korsi. 
+//.than(jsonData=>document.write(JSON.Stringify(jsonData))) seei jsondata ta ke stringify kore browser a dekhte chai.
+
+    //......................................................................................
+    //********************************* Axios
+    //request respons ae same kaj ta amra Axios deye o korte pari. jokhon amra project korbo ,tokhon Axios use koree korbo.
+    //Axios use korar jonno er (CDN ta amra html a connect kore debo.)
+
+    //Async using Axios
+    //  AsyncUsingAxios()
+    // async function AsyncUsingAxios(){
+
+    //   let res = await axios.get(URL)  //server request pathaesi
+    //   let jsonData = res.data;     //respons ta ke  json a convert
+    //  data ta ke browser a show korabo
+    //   document.write(JSON.stringify(jsonData))
+    // }
+//............................................................................................
+//// same kajta Axios using promises kore pathabo
+            // AxiosUsingPromises()
+        //   function AxiosUsingPromises(){
+            //  
+            // axios.get(URL)
+            // .then(res=>res.data)
+            // .then(jsonData=>document.write(JSON.stringify(jsonData)))
+        //   }
+
+        //...............................
+        //.than 2 bar use na kore .then 1 bar o use korte parbo. tar jonno amra .than er bitore akta callback function nebo.
+           simpleAxiosGet()
+        function simpleAxiosGet(){
+         axios.get(URL).then((res)=>{    //ae resopns theke jeei data ta paelam
+            let jsonData= res.data;   //data ta ke json data   te  convert korlam
+            document.write(JSON.stringify(jsonData)) //data ke stringify kore browser a show korlam
+         })
         }
 
+
+
+
+
+//implement -> amra bivinno vabe ajax a request pathano shikhlam and respons recive kora shikhlam.
+//amra async-await a korlam . amar promises a korlam.
     </script>
 </body>
 </html>
