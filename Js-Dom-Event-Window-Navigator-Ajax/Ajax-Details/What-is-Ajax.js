@@ -22,7 +22,11 @@
 
 //Backend a request pathaia  Ajax practices korbo, setai Backend Api.
 
-//Backend System/Api create korar jonno akta tools er dorkar koy,tar name holo (Postman)
+//Backend System/Api create korar jonno/server a kevabe request pathabo,abar server theke kivabe respons recive korbo,/orthat request jabe ki kore respons ashbe ki kore  ae boshoi ta practice korar jonno  amader akta Backend-system-Api dorkar, jeei backend-system ta deye ae jinish ta amra practice korte pari  akta tools er dorkar hoy,tar name holo (Postman software)
+
+
+//Api Doc**** --> ami jodi akta Backend-system create korlam , seei backend-system er URL ki ,seei backend-system a ki ki data jai  seei sob documentation , seei documentation ta keei bola hoy APi DOC/Backend-System Documentation. ae Documentation ta create korar jonno ba practice korar jonno jeei tool ta dorkar hoy ,seii tool ta ke bolo (POSTMAN)
+
 
 //Build in XMLHttpRequest feature holo (old version) je feature deye Ajax er kaj ta kora jai.
 //Build in Fetch holo(letest version)
