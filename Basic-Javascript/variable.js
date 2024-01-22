@@ -37,4 +37,8 @@
 
 let names = 'Riajul'  //names 1 bar declare korlee hobe let 
  // let names = 'Islam'  //Error ashbe
-console.log(names)
+//console.log(names)
+
+var age1=20;
+var age2=40
+console.log(age1+age2)
